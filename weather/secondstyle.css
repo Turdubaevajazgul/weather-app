@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans&family=Overpass:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans&family=Overpass:wght@400;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    /* height:100vh; */
+    /* width:414px; */
+    background: linear-gradient(192.05deg, #47BFDF 0%, #4A91FF 100%);
+    border-radius: 15px;
+}
+.container{
+    /* height:fit-content; */
+    /* width:414px; */
+    height:100%;
+    width:414px;
+    margin:0 auto;
+    padding:50px 25px;
+   
+}
+.header{
+    /* height:100%; */
+    display:flex;
+    justify-content: space-between;
+      
+}
+.header>img{
+    width:10px;
+    margin-right:15px;
+}
+a{
+    margin-right:900px;
+    color:white;
+    font-weight: 600;
+    font-style: overpass;
+    font-size: 24px;
+    text-decoration: none;
+
+}
+.data{
+    height:120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:100%;
+}
+.data h1,.week h1{
+    font-family:overpass;
+    font-size:24px;
+    font-weight:900;
+    color:white;
+    font-style:normal;
+}
+.data p{
+    font-family:overpass;
+    font-size:18px;
+    font-weight:400;
+    font-style:normal;
+    color:white;
+}
+.span{
+     display: flex;
+    flex-direction: column;
+    display: inline-block;
+}
+.week{    
+    display: flex;
+    justify-content: space-between; 
+     
+}
+.days{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+.daily{
+    display:flex;
+    overflow: scroll;
+    overflow-y: auto;
+    align-items: center;
+    height:40vh;
+       
+}
+.day:hover{
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    border:1px solid white;
+    transition:0.8s;
+    transform: scale(1.1);
+}
+.daily::-webkit-scrollbar{
+    height:6px;
+    border:1px solid white;
+    border-radius:5px;
+}
+.daily::-webkit-scrollbar-thumb{
+    background-color:#fff ;
+    border-radius: 5px;
+}
+.days img{
+    width: 64px;
+    height: 64px;
+}
+.days span{
+    font-family:overpass;
+    font-size:18px;
+    font-weight:700;
+    font-style:normal;
+    color:white;
+}
+.week{
+   margin-top:35px;
+}
+.accuweather,.day p{
+    font-family:overpass;
+    font-size:18px;
+    font-weight:400;
+    font-style:normal;
+    color:white;
+    padding-left: 30px;
+}
+.accuweather {
+    display:flex;
+    justify-content: space-between;
+    justify-content: center;
+    margin-top:40px;
+}
+.weekdays{
+    height:40vh;
+    overflow: scroll;
+    overflow-x: auto;
+}
+.weekdays::-webkit-scrollbar{
+   width:6px;
+   border:1px solid white;
+   border-radius: 5px ;
+}
+.weekdays::-webkit-scrollbar-thumb{
+    background-color:#fff ;
+    border-radius: 5px;
+}
